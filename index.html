@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body ontouchstart class="pass-module teacher-module ">
+    <div id="tips">
+    	<div class="text"><b>第3周-星期四-第2节</b></div>
+    	<div class="text"><strong>课程名称:</strong><span>高等数学</span></div>
+        <div class="text"><strong>上课时间:</strong><span>8:40~9:45</span></div>
+        <h5></h5>
+    </div>
+	
+    <div class="overfolw"></div>
+    
+    <div class="downtime">
+    	<div class="text">签到倒计时</div>
+    	<span><b id="time"></b><i>秒</i></span>
+    </div>
+    
+    <div id="teacherpwd"></div>
+    
+    <footer>
+    	<a href="javascript:;" id="reset" class="btn-a">重新设置</a>
+        <a href="javascript:;" id="set" class="btn-b">开始点名</a>
+    </footer>
+
+    
+    
+
+
+
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/password.js"></script>
+    
+
+    <script type="text/javascript">
+	//清除事件默认
+        $(window).on('scroll.elasticity',function (e){e.preventDefault();}).on('touchmove.elasticity',function(e){e.preventDefault();});
+		setPwd();
+		var pass = "";
+		//使用JQ绑定自定义事件“hasPasswd”，并设定事件处理
+		$("#teacherpwd").on("hasPasswd",function(e,passwd){
+		    //底部按钮显示
+			$("footer").show();
+			$(".overfolw").show();
+			pass = passwd;
+        });
+		//点击充值按钮，刷新页面实现清空图案的效果（希望有更好的解决方案）
+		$("#reset").click(function(){
+			location.reload();
+		});
+		//点击“开始点名按钮”，
+		$("#set").click(function(){
+			//$("#tips h5").show().text("图案顺序码："+pass);
+			//显示倒计时灰色模块
+			$(".downtime").show();
+			//底部的两个摁钮隐藏
+			$("#reset").hide();
+			$(this).hide();
+			var i = 20;
+			//在该显示时间的地方显示倒计时i
+			$("#time").text(i);
+			//设置定时器
+			setInterval(function(){
+				i--;
+				if(i <= 0){
+					$("#time").text("时间到");
+					$("#time").next().text("");
+				}else{
+					$("#time").text(i);
+				}
+			},1000);
+			
+		});
+		
+		function setPwd(){
+			$("#teacherpwd").GesturePasswd({
+				backgroundColor:"#fff",  //背景色
+				color:"#888",   //主要的控件颜色
+				roundRadii:23,    //大圆点的半径
+				pointRadii:10, //大圆点被选中时显示的圆心的半径
+				space:45,    //大圆点之间的间隙
+				width:280,   //整个组件的宽度
+				height:280,  //整个组件的高度
+				lineColor:"red",   //用户划出线条的颜色
+				zindex :100  //整个组件的css z-index属性
+			});
+		}
+		
+        
+        
+    </script>
+
+</body>
+</html>

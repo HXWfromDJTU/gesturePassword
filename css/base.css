@@ -1,0 +1,79 @@
+.pass-module{margin:0; padding:0; background:#1C1B20;-webkit-touch-callout: none; -webkit-user-select: none;}
+.pass-module #gesturepwd{ position:absolute; left:50%; top:50%; margin-left:-160px; margin-top:-160px;}
+.pass-module #teacherpwd{ position:absolute; left:50%; top:50%; margin-left:-140px; margin-top:-140px;}
+.pass-module h3{ width: 80%; font-size: 14px; padding: 15px 0; margin: 15px 10%; border: 1px solid #333; border-radius: 50px; text-align: center; color: #999;}
+.pass-module p{ width: 100%; padding: 10px 0; font-size: 12px; color: #999; text-align: center; position: fixed; left: 0; bottom: 0;}
+.pass-module footer{ z-index:1001; display:none; width:90%; height:70px; position:fixed; left:0; bottom:0; padding:0 5%;}
+.pass-module footer .btn-a{ float:left; width:40%; height:40px; line-height:40px; text-decoration:none; border-radius:5px; text-align:center; margin:15px 0; display:inline-block; border:1px solid #04BE02; color: #04BE02;}
+.pass-module footer .btn-b{ float:right; width:40%; height:40px; line-height:40px; text-decoration:none; border-radius:5px; text-align:center; margin:15px 0; display:inline-block; background-color: #04BE02; border:1px solid #04BE02; color: #FFFFFF;}
+.teacher-module{ background:#fff !important}
+.teacher-module .overfolw{ width:100%; height:100%;  position:fixed; z-index:1000; left:0; top:0; display:none;}
+.teacher-module #tips{ width:100%; padding:10px; background:#fff; box-sizing:border-box; -webkit-box-sizing:border-box; float:left;}
+.teacher-module #tips .text{ width:100%; float:left;font-size:13px; color:#888; border-bottom:1px solid #f2f2f2; padding:5px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.teacher-module #tips .text b{ color:#3CC51F; width:100%; font-weight:normal; display:inline-block;}
+.teacher-module #tips .text strong{ font-weight:normal; padding-right:5px; color:#666;}
+.teacher-module #tips .text h5{ display:none; text-align:center;}
+.teacher-module .downtime{ width:280px; height:280px; display:none; background:rgba(0,0,0,0.5); border-radius:10px; position:fixed; left:50%; top:50%; margin-left:-140px; margin-top:-140px; z-index:1002;}
+.teacher-module .downtime span{ line-height:280px; text-align:center; width:100%; display:inline-block;}
+.teacher-module .downtime span b{ font-size:72px; color:#fff;}
+.teacher-module .downtime span i{ color:#fff; font-style:normal; font-weight:900}
+.teacher-module .downtime .text{ width:100%; text-align:center; color:#fff; padding:10px 0; position:absolute; top:0; left:0;}
+.teacher-module .tips-password{ width:100%; text-align:center; position: fixed; left: 0; bottom: 70px;}
+.call-module .weui_cell{ }
+.call-module .cell-header { background: #22BB5E !important; border-top: 1px solid #22BB5E; color: #fff;}
+.call-module .weui_cells{ margin-top: 0;} 
+.call-module .weui_cell{ padding-right: 0 !important}
+.call-module .weui_cell:before{ left: 0}
+.call-module .weui_cell:nth-of-type(odd){ background: #f2f2f2}
+.call-module .weui_cell_hd{ width: 70px; padding:15px 0 15px 0;}
+.call-module .weui_cell_bd{ width: 120px;}
+.call-module .weui_cell_bd a{ color: #000; font-weight: 900}
+.call-module .weui_cell_bd{ width: 150px;}
+.call-module .weui_cell_cd ul{ list-style: none;}
+.call-module .weui_cell_cd li{ width: 33%; float: left;}
+.call-module .weui_cell_cd .cd-icon{ float: right; margin-right: 5px; width: 40px; height: 40px; display: inline-block; line-height: 40px; text-align:center;  border-style: solid; border-width: 1px;font-size: 16px;}
+.call-module .weui_cell_cd .chi-icon{ border-color: #22BB5E; background: #fff; color: #22BB5E}
+.call-module .weui_cell_cd .kuang-icon{ border-color: #DE7C23; background: #fff; color: #DE7C23}
+.call-module .weui_cell_cd .jia-icon{ border-color: #225FBB; background: #fff; color: #225FBB}
+.call-module .weui_cell_cd .cd-icon.selected{background:#ccc; color: #999; border-color: #ccc;}
+.data-module .weui_cell span{ width: 60px; display: inline-block; border-right: 1px solid #ccc; padding-right: 5px; margin-right: 15px;}
+.data-module .weui_cell i{ font-style: normal; background: #f00; width: 14px; height: 14px; display: inline-block; text-align: center; line-height: 14px; position: relative; top: -2px; font-size: 12px; margin: 0 3px; border-radius: 14px; color: #fff}
+.data-module div.weui_fx{ margin-top: 20px;}
+.data-module div.weui_fx span{ font-weight: 900}
+.data-module div.weui_fx p{ font-weight: 900}
+.hd { padding: 2em 0;}
+.page_title { text-align: center; font-size: 34px; color: #3CC51F;font-weight: 400; margin: 0 15%;}
+.page_desc { text-align: center;color: #888;font-size: 14px;}
+
+.weui_extra_area{ margin-bottom: 15px; font-size: 14px;color: #888;}
+.weui_extra_area a {color: #61749B;}
+
+.course-list-module{ width:100%; height:100%; position:absolute; left:0; top:0; overflow: hidden; z-index:1; }
+.period-bar{ width:120px; position:fixed; left:0; top:1px; z-index:999; background:#fff; border-right:1px solid #dbdbdb; }
+.period-bar div{ text-align:center; width:100%; padding:10px 0; height:70px; box-sizing:border-box; -webkit-box-sizing:border-box; float:left; border-bottom:1px solid #dbdbdb; }
+.period-bar div span{ width:100%;}
+.period-bar div span:nth-child(1){ padding:2px 5px; font-size:12px; color:#fff; margin-top:5px; background:#04BE02; border-radius:10px;}
+.period-bar div span:nth-child(3){ margin-top:5px; display:inline-block;}
+.period-bar div:nth-child(1){ margin-top:50px; border-top:1px solid #dbdbdb; position:relative; top:-1px; height:71px;}
+.period-bar div:nth-child(2){ position:relative; top:-1px;}
+.period-bar div:nth-child(3){ position:relative; top:-1px;}
+.period-bar div:nth-child(4){ position:relative; top:-1px;}
+.week-module{ width:100%; padding-left:120px; box-sizing:border-box; -webkit-box-sizing:border-box; float:left;}
+.week-module table { width:100%;border-bottom:1px solid #dbdbdb;}
+.week-module table thead td{ width:210px; height:50px;background:#fff; line-height:50px; text-align:center; border-right:1px solid #dbdbdb; font-size:18px; color:#333;}
+.week-module table tbody tr:nth-child(odd){ background:#f2f2f2;}
+.week-module table tbody tr:nth-child(even){ background:#fff;}
+.week-module table tbody td{ width:210px; height:70px; padding:10px; border-right:1px solid #dbdbdb; box-sizing:border-box; -webkit-box-sizing:border-box;border-top:1px solid #dbdbdb;}
+.week-module table tbody td p{ word-break:break-all;}
+#scroller {position: absolute;z-index: 1;-webkit-tap-highlight-color: rgba(0,0,0,0);width: 1306px;height:100%;-webkit-transform: translateZ(0);-moz-transform: translateZ(0);-ms-transform: translateZ(0);-o-transform: translateZ(0);transform: translateZ(0);-webkit-touch-callout: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none;-o-text-size-adjust: none;text-size-adjust: none;}
+.iScrollHorizontalScrollbar {position: absolute;z-index: 9999;height: 25px;left: 0;right: 5px;bottom: 20px;overflow: hidden;}
+.iScrollHorizontalScrollbar:after{ content:'左右滑动屏幕查看更多信息'; width:100%; text-align:center; line-height:25px; font-size:12px; display:inline-block}
+.iScrollIndicator {position: absolute;background: #cc3f6e;border-radius:10px;}
+.iScrollHorizontalScrollbar .iScrollIndicator {height: 100%;background:url(images/arrow-lr.svg) center no-repeat;background-size:45px auto;}
+
+.ta-icon{width: 20px; height: 20px; position: relative; top: 2px; display: inline-block; margin-right: 10px; background: url(images/ta-icon.png); background-size: 20px 20px;}
+.ct-icon{width: 20px; height: 20px; position: relative; top: 2px; display: inline-block; margin-right: 10px; background: url(images/ct-icon.png); background-size: 20px 20px;}
+.kb-icon{width: 20px; height: 20px; position: relative; top: 2px; display: inline-block; margin-right: 10px; background: url(images/kb-icon.png); background-size: 20px 20px;}
+.jl-icon{ width: 20px; height: 20px; position: relative; top: 2px; display: inline-block; margin-right: 10px; background: url(images/jl-icon.png); background-size: 20px 20px;}
+.sz-icon{ width: 20px; height: 20px; position: relative; top: 2px; display: inline-block; margin-right: 10px; background: url(images/sz-icon.png); background-size: 20px 20px;}
+
